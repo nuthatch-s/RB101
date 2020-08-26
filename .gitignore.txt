@@ -1,3 +1,0 @@
-practice.txt
-exercise.txt
-studynotes.txt
