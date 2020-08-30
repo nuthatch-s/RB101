@@ -7,11 +7,11 @@ def prompt2(message)
 end
 
 def valid_number?(num)
-  num == '0' || num.to_i() != 0
+  num == '0' || num.to_f() != 0
 end
 
 def operation_to_message(op)
-  case op
+  message = case op
   when '1'
     'Adding'
   when '2'
@@ -21,6 +21,7 @@ def operation_to_message(op)
   when '4'
     'Dividing'
   end
+  message
 end
 
 prompt "Welcome to Calculator! Enter your name:"
@@ -84,11 +85,11 @@ What operation would you like to perform?
 
   result =  case operator
             when '1'
-              number1.to_i + number2.to_i
+              number1.to_f + number2.to_f
             when '2'
-              number1.to_i - number2.to_i
+              number1.to_f - number2.to_f
             when '3'
-              number1.to_i * number2.to_i
+              number1.to_f * number2.to_f
             when '4'
               number1.to_f / number2.to_f
             end
