@@ -1,0 +1,2 @@
+welcome: "Welcome to Calculator! Enter your name:"
+prompt valid_name: "Make sure to use a valid name."
